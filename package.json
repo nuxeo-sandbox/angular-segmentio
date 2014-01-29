@@ -1,10 +1,14 @@
 {
   "name": "angular-segmentio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-contrib-watch": "~0.3.1",
-    "grunt-karma": "~0.4.3"
+    "phantomjs": "~1.9.1-0",
+    "grunt-karma": "~0.5",
+    "karma": "~0.9",
+    "karma-jasmine": "0.0.1",
+    "karma-phantomjs-launcher": "0.0.2"
   }
 }
