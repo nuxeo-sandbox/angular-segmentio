@@ -56,12 +56,6 @@ describe('Segment IO', function () {
 		expect(segmentio.group).toBeDefined();
 	}));
 
-	it('should listen to $viewContentLoaded', inject(function (segmentio, $rootScope) {
-		spyOn(segmentio, "pageview");
-		$rootScope.$broadcast('$viewContentLoaded');
-		expect(segmentio.pageview).toHaveBeenCalled();
-	}));
-
 	it('should load the API when called with api key', inject(function ($window, segmentio) {
 		segmentio.load(apiKey);
 
