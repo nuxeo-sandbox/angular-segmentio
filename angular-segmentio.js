@@ -1,5 +1,5 @@
 angular.module('segmentio', ['ng'])
-    .factory('segmentio', ['$rootScope', '$window', '$location', '$log', function ($rootScope, $window, $location, $log) {
+    .service('segmentio', ['$rootScope', '$window', '$location', '$log', function ($rootScope, $window, $location, $log) {
         var service = {};
 
         $window.analytics = $window.analytics || [];
@@ -24,7 +24,7 @@ angular.module('segmentio', ['ng'])
 
         // Loop through analytics.js' methods and generate a wrapper method for each.
         var methods = ['identify', 'track', 'trackLink', 'trackForm', 'trackClick',
-            'trackSubmit', 'pageview', 'ab', 'alias', 'ready', 'group'];
+            'trackSubmit', 'pageview', 'page', 'ab', 'alias', 'ready', 'group'];
         for (var i = 0; i < methods.length; i++) {
             service[methods[i]] = methodFactory(methods[i]);
         }
