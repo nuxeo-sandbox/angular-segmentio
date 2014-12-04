@@ -1,15 +1,18 @@
 {
     "name": "angular-segmentio",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "angular-segmentio.js",
     "dependencies": {
-        "angular": "~1.2.15"
+        "angular": "1.2.x"
     },
     "devDependencies": {
-      "angular-mocks": "~1.2.15"
+      "angular-mocks": "1.2.x"
     },
      "ignore": [
 	    "test/",
 	    "config/"
-  	]
+    ],
+    "resolutions": {
+        "angular": "1.2.27"
+    }
 }

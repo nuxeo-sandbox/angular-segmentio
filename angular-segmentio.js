@@ -40,7 +40,7 @@ angular.module('segmentio', ['ng'])
             script.type = 'text/javascript';
             script.async = true;
             script.src = ('https:' === document.location.protocol ? 'https://' : 'http://') +
-                'd2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/' + apiKey + '/analytics.js';
+                'd2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/' + apiKey + '/analytics.min.js';
 
             // Find the first script element on the page and insert our script next to it.
             var firstScript = document.getElementsByTagName('script')[0];
