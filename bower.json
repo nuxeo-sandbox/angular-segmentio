@@ -3,16 +3,16 @@
     "version": "1.0.5",
     "main": "angular-segmentio.js",
     "dependencies": {
-        "angular": "1.2.x"
+        "angular": "1.4.0"
     },
     "devDependencies": {
-      "angular-mocks": "1.2.x"
+      "angular-mocks": "1.4.0"
     },
      "ignore": [
 	    "test/",
 	    "config/"
     ],
     "resolutions": {
-        "angular": "1.2.27"
+        "angular": "1.4.0"
     }
 }
